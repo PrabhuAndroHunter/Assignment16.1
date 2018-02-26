@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.assignment.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_user_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter Text"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="5"
+        android:paddingLeft="5dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_user_data"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="SAVE To File" />
+
+    <TextView
+        android:id="@+id/text_view_file_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_save"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:background="@drawable/button_border"
+        android:hint="File data" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_file_data"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="DELETE File" />
+
+</RelativeLayout>
+
